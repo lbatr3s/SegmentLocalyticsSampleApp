@@ -13,6 +13,10 @@
 		3F3AB76A1F3A10E5007430C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AB7691F3A10E5007430C1 /* Assets.xcassets */; };
 		3F3AB76D1F3A10E5007430C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3AB76B1F3A10E5007430C1 /* LaunchScreen.storyboard */; };
 		3F3AB7781F3A10E5007430C1 /* SegmentLocalyticsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AB7771F3A10E5007430C1 /* SegmentLocalyticsTestTests.swift */; };
+		3F3AB7841F3A12F7007430C1 /* Localytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AB7831F3A12F7007430C1 /* Localytics.framework */; };
+		3F3AB78B1F3A136C007430C1 /* SEGLocalyticsIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AB7881F3A136C007430C1 /* SEGLocalyticsIntegration.m */; };
+		3F3AB78C1F3A136C007430C1 /* SEGLocalyticsIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AB78A1F3A136C007430C1 /* SEGLocalyticsIntegrationFactory.m */; };
+		3F3AB7911F3A1881007430C1 /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AB7901F3A1881007430C1 /* Analytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,13 @@
 		3F3AB7731F3A10E5007430C1 /* SegmentLocalyticsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SegmentLocalyticsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3AB7771F3A10E5007430C1 /* SegmentLocalyticsTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentLocalyticsTestTests.swift; sourceTree = "<group>"; };
 		3F3AB7791F3A10E5007430C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3AB7831F3A12F7007430C1 /* Localytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Localytics.framework; sourceTree = "<group>"; };
+		3F3AB7861F3A136B007430C1 /* SegmentLocalyticsTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SegmentLocalyticsTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F3AB7871F3A136C007430C1 /* SEGLocalyticsIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGLocalyticsIntegration.h; sourceTree = "<group>"; };
+		3F3AB7881F3A136C007430C1 /* SEGLocalyticsIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGLocalyticsIntegration.m; sourceTree = "<group>"; };
+		3F3AB7891F3A136C007430C1 /* SEGLocalyticsIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGLocalyticsIntegrationFactory.h; sourceTree = "<group>"; };
+		3F3AB78A1F3A136C007430C1 /* SEGLocalyticsIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGLocalyticsIntegrationFactory.m; sourceTree = "<group>"; };
+		3F3AB7901F3A1881007430C1 /* Analytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Analytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3AB7841F3A12F7007430C1 /* Localytics.framework in Frameworks */,
+				3F3AB7911F3A1881007430C1 /* Analytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +72,7 @@
 		3F3AB7561F3A10E5007430C1 = {
 			isa = PBXGroup;
 			children = (
+				3F3AB7821F3A12C4007430C1 /* Frameworks */,
 				3F3AB7611F3A10E5007430C1 /* SegmentLocalyticsTest */,
 				3F3AB7761F3A10E5007430C1 /* SegmentLocalyticsTestTests */,
 				3F3AB7601F3A10E5007430C1 /* Products */,
@@ -96,6 +110,29 @@
 			path = SegmentLocalyticsTestTests;
 			sourceTree = "<group>";
 		};
+		3F3AB7821F3A12C4007430C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AB7901F3A1881007430C1 /* Analytics.framework */,
+				3F3AB7851F3A1321007430C1 /* Segment_Localytics */,
+				3F3AB7831F3A12F7007430C1 /* Localytics.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F3AB7851F3A1321007430C1 /* Segment_Localytics */ = {
+			isa = PBXGroup;
+			children = (
+				3F3AB7871F3A136C007430C1 /* SEGLocalyticsIntegration.h */,
+				3F3AB7881F3A136C007430C1 /* SEGLocalyticsIntegration.m */,
+				3F3AB7891F3A136C007430C1 /* SEGLocalyticsIntegrationFactory.h */,
+				3F3AB78A1F3A136C007430C1 /* SEGLocalyticsIntegrationFactory.m */,
+				3F3AB7861F3A136B007430C1 /* SegmentLocalyticsTest-Bridging-Header.h */,
+			);
+			name = Segment_Localytics;
+			path = "Segment-Localytics";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +143,7 @@
 				3F3AB75B1F3A10E5007430C1 /* Sources */,
 				3F3AB75C1F3A10E5007430C1 /* Frameworks */,
 				3F3AB75D1F3A10E5007430C1 /* Resources */,
+				3F3AB78F1F3A178E007430C1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -146,7 +184,8 @@
 				TargetAttributes = {
 					3F3AB75E1F3A10E5007430C1 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Manual;
 					};
 					3F3AB7721F3A10E5007430C1 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -194,6 +233,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F3AB78F1F3A178E007430C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Analytics.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F3AB75B1F3A10E5007430C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -201,6 +257,8 @@
 			files = (
 				3F3AB7651F3A10E5007430C1 /* ViewController.swift in Sources */,
 				3F3AB7631F3A10E5007430C1 /* AppDelegate.swift in Sources */,
+				3F3AB78C1F3A136C007430C1 /* SEGLocalyticsIntegrationFactory.m in Sources */,
+				3F3AB78B1F3A136C007430C1 /* SEGLocalyticsIntegration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,10 +397,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = SegmentLocalyticsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.home.SegmentLocalyticsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Frameworks/Segment-Localytics/SegmentLocalyticsTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -351,10 +418,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = SegmentLocalyticsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.home.SegmentLocalyticsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Frameworks/Segment-Localytics/SegmentLocalyticsTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
