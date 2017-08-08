@@ -16,7 +16,11 @@
 		3F3AB7841F3A12F7007430C1 /* Localytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AB7831F3A12F7007430C1 /* Localytics.framework */; };
 		3F3AB78B1F3A136C007430C1 /* SEGLocalyticsIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AB7881F3A136C007430C1 /* SEGLocalyticsIntegration.m */; };
 		3F3AB78C1F3A136C007430C1 /* SEGLocalyticsIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AB78A1F3A136C007430C1 /* SEGLocalyticsIntegrationFactory.m */; };
-		3F3AB7911F3A1881007430C1 /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AB7901F3A1881007430C1 /* Analytics.framework */; };
+		3F3AB7991F3A2976007430C1 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AB7981F3A2976007430C1 /* AdSupport.framework */; };
+		3F3AB79B1F3A2984007430C1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AB79A1F3A2984007430C1 /* libsqlite3.tbd */; };
+		3F3AB79D1F3A29A1007430C1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AB79C1F3A29A1007430C1 /* libz.tbd */; };
+		3F3AB79F1F3A29AB007430C1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AB79E1F3A29AB007430C1 /* CoreLocation.framework */; };
+		3F3AB7A11F3A29B7007430C1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3AB7A01F3A29B7007430C1 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +50,11 @@
 		3F3AB7881F3A136C007430C1 /* SEGLocalyticsIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGLocalyticsIntegration.m; sourceTree = "<group>"; };
 		3F3AB7891F3A136C007430C1 /* SEGLocalyticsIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGLocalyticsIntegrationFactory.h; sourceTree = "<group>"; };
 		3F3AB78A1F3A136C007430C1 /* SEGLocalyticsIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGLocalyticsIntegrationFactory.m; sourceTree = "<group>"; };
-		3F3AB7901F3A1881007430C1 /* Analytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Analytics.framework; sourceTree = "<group>"; };
+		3F3AB7981F3A2976007430C1 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		3F3AB79A1F3A2984007430C1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3F3AB79C1F3A29A1007430C1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3F3AB79E1F3A29AB007430C1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3F3AB7A01F3A29B7007430C1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +62,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3AB7A11F3A29B7007430C1 /* SystemConfiguration.framework in Frameworks */,
+				3F3AB79F1F3A29AB007430C1 /* CoreLocation.framework in Frameworks */,
+				3F3AB79D1F3A29A1007430C1 /* libz.tbd in Frameworks */,
+				3F3AB79B1F3A2984007430C1 /* libsqlite3.tbd in Frameworks */,
+				3F3AB7991F3A2976007430C1 /* AdSupport.framework in Frameworks */,
 				3F3AB7841F3A12F7007430C1 /* Localytics.framework in Frameworks */,
-				3F3AB7911F3A1881007430C1 /* Analytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +125,11 @@
 		3F3AB7821F3A12C4007430C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3F3AB7901F3A1881007430C1 /* Analytics.framework */,
+				3F3AB7A01F3A29B7007430C1 /* SystemConfiguration.framework */,
+				3F3AB79E1F3A29AB007430C1 /* CoreLocation.framework */,
+				3F3AB79C1F3A29A1007430C1 /* libz.tbd */,
+				3F3AB79A1F3A2984007430C1 /* libsqlite3.tbd */,
+				3F3AB7981F3A2976007430C1 /* AdSupport.framework */,
 				3F3AB7851F3A1321007430C1 /* Segment_Localytics */,
 				3F3AB7831F3A12F7007430C1 /* Localytics.framework */,
 			);
